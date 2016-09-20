@@ -100,6 +100,9 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
   color: #333;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -107,8 +110,8 @@ body {
 h1, h2, h3, h4, strong {
   font-weight: 600;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+h1, h2, h3, h4 {
+  line-height: 1.2;
 }
 iframe {
   display: block;
@@ -117,6 +120,13 @@ iframe {
 .main {
   padding: 1.0rem;
 }
+.filter-list {
+  list-style-type: none;
+}
+.filter-list li {
+  display: inline-block;
+}
+
 .tile {
   display: inline-block;
   width: 344px;
@@ -127,19 +137,16 @@ iframe {
 }
 .tile iframe {
   height: 310px;
+  margin-top: 1.0rem;
   opacity: 0;
   transition: opacity 1s ease;
 }
 .tile iframe.lazy-loaded {
   opacity: 1;
 }
-.title {
-  margin: 0 0 0.75rem;
-  line-height: 1.2;
-}
-.genres {
+.genre-list {
   display: block;
-  margin-bottom: 1.0rem;
+  margin: 0.375rem 0 0;
   font-size: 0.9375rem;
 }
 
@@ -162,6 +169,21 @@ iframe {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.center {
+  text-align: center;
+}
+
+.p0 { padding: 0; }
+.m0 { margin: 0; }
+
+.mt0 { margin-top: 0; }
+.mt1 { margin-top: 1rem; }
+.mt2 { margin-top: 2rem; }
+
+.mb0 { margin-bottom: 0; }
+.mb1 { margin-bottom: 1rem; }
+.mb2 { margin-bottom: 2rem; }
 
 /*
  * Hide visually and from screen readers
