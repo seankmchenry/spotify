@@ -105,13 +105,13 @@ html {
 }
 body {
   color: #333;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-}
-h1, h2, h3, h4, strong {
-  font-weight: 600;
+  font-family: "PT Sans", Helvetica, sans-serif;
 }
 h1, h2, h3, h4 {
   line-height: 1.2;
+}
+b, strong {
+  font-weight: bold;
 }
 iframe {
   display: block;
@@ -150,7 +150,8 @@ iframe {
 .genre-list {
   display: block;
   margin: 0.375rem 0 0;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
+  font-family: "PT Serif", Times, serif;
 }
 
 .tile:nth-of-type(5n+1) {
